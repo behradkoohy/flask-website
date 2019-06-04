@@ -10,9 +10,9 @@ posts = [
         "date":"4 June 2019"
     },
     {
-        "author":"Behrad Koohy",
-        "title":"The First Blog Post",
-        "content":"This is huge, Behrad is actually doing something",
+        "author":"Hashem Koohy",
+        "title":"The Second Blog Post",
+        "content":"No he's not",
         "date":"4 June 2019"
     }
 ]
@@ -21,7 +21,7 @@ posts = [
 @app.route('/')
 @app.route('/home')
 def home_page():
-    return render_template('home.html', posts)
+    return render_template('home.html', posts=posts)
 
 @app.route('/about')
 def about_page():
